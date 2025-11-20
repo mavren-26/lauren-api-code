@@ -1,0 +1,14 @@
+🔵 Problem 2 — Build a Weather API Aggregator
+Problem Statement
+
+Create an API that:
+
+Accepts a city name
+
+Calls two third-party weather APIs
+
+Combines the results
+
+Returns the average temperature and final status
+
+If one API fails, still return data from the other one.

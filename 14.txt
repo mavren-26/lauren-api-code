@@ -1,0 +1,15 @@
+🔵 Problem 1 — Build an API Rate Limiter (Token Bucket Algorithm)
+
+Problem Statement
+
+Design a middleware to limit each user to 5 requests per 10 seconds.
+
+You must:
+
+Identify user by IP
+
+Store tokens in memory (or Redis if needed)
+
+Refill tokens over time
+
+Block requests when tokens are exhausted
