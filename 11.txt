@@ -1,0 +1,21 @@
+🔥 Problem 2 — Post Data to an API
+
+Send JSON to an API and receive a response.
+
+Problem Statement
+
+Send a POST request to:
+
+https://jsonplaceholder.typicode.com/posts
+
+
+Send JSON:
+
+{
+  "title": "Hello",
+  "body": "API Testing",
+  "userId": 5
+}
+
+
+Print the ID returned.

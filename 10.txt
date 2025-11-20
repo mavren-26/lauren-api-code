@@ -1,0 +1,18 @@
+🔥 Problem 1 — Fetch User Data From an API
+
+Use a public API and print user details.
+
+Problem Statement
+
+Write a program that calls the API:
+
+https://jsonplaceholder.typicode.com/users/1
+
+
+Fetch the user info and print:
+
+Name
+
+Email
+
+City
