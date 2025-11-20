@@ -1,0 +1,19 @@
+🔵 Problem 4 — Build a Job Queue API (Medium)
+
+Simulate background processing (like sending emails).
+
+Problem Statement
+
+Create two endpoints:
+
+POST /task
+
+Adds a job to a queue
+
+Returns a job ID
+
+GET /status/:id
+
+Returns job status: pending, processing, done
+
+A background worker should process 1 job every 3 seconds.

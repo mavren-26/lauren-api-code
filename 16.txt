@@ -1,0 +1,22 @@
+🔵 Problem 3 — Build a URL Shortener API (Medium)
+Problem Statement
+
+Build two endpoints:
+
+POST /shorten
+
+Input: long URL
+
+Output: short unique code
+
+Store mapping in memory (or DB)
+
+GET /:code
+
+Redirect to the original long URL
+
+You must ensure:
+
+Short code is unique
+
+Redirect returns 404 if code not found
