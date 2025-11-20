@@ -1,0 +1,41 @@
+✅ Problem 1: Real-Time Stock Price Tracker (WebSocket + API)
+
+
+Problem Statement
+
+You are given a REST API endpoint:
+
+GET /api/stock/<symbol>
+
+
+It returns the current stock price of a company as JSON:
+
+{
+  "symbol": "AAPL",
+  "price": 189.23
+}
+
+
+You also need to create a WebSocket server that continuously pushes live price updates to all connected clients every 1 second.
+
+Your Tasks
+
+Write an API function getStock(symbol) that fetches the current price (mock it).
+
+Build a WebSocket server ws://localhost:3000/live
+
+Every 1 second:
+
+fetch the price using getStock(symbol)
+
+broadcast to all WebSocket clients:
+
+{ "symbol": "AAPL", "price": 189.23, "timestamp": 1700382000 }
+
+Key Points
+
+Multiple clients can connect.
+
+Server continues broadcasting until shut down.
+
+Clients should get the latest price immediately after connection.

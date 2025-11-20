@@ -1,0 +1,41 @@
+✅ Problem 2: Chat App With Typing Indicator (API + WebSocket)
+
+Problem Statement
+
+You run a small chat server.
+
+REST API
+POST /api/sendMessage
+
+
+Body:
+
+{
+  "user": "Ankur",
+  "message": "Hello"
+}
+
+
+The API just stores messages in an in-memory array.
+
+WebSocket
+
+Clients connect to:
+
+ws://localhost:4000/chat
+
+
+You must implement two real-time events over WebSocket:
+
+Event 1: Message Broadcast
+
+Whenever a message is sent using the REST API:
+
+The server broadcasts:
+
+{
+  "type": "message",
+  "user": "Ankur",
+  "message": "Hello",
+  "time": 1700382200
+}
