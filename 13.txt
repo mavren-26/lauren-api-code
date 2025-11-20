@@ -1,0 +1,46 @@
+✅ Problem 2 — API Log Analyzer (Medium)
+
+Topic: Arrays, HashMap, Parsing, Backend
+Difficulty: Medium
+Interview Use: Backend SWE, system/infra teams
+
+Problem Statement
+
+You are given logs from an API server.
+Each log line is in the format:
+
+<timestamp> <userId> <statusCode>
+
+
+Example:
+
+100 user1 200
+101 user2 500
+102 user1 500
+103 user1 200
+105 user3 404
+
+Tasks
+
+Write a function that returns:
+
+1. Most active user
+
+User with max number of API calls.
+
+2. Error rate per user
+
+Error = any statusCode >= 400
+Return:
+
+{
+  user1: { calls: 3, errors: 1 },
+  user2: { calls: 1, errors: 1 },
+  user3: { calls: 1, errors: 1 }
+}
+
+3. Global error percentage
+
+Formula:
+
+(global errors / global calls) * 100

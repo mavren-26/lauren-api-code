@@ -1,0 +1,57 @@
+✅ Problem 1 — Rate Limit API (Medium)
+
+Topic: HashMap, Queues, API Design, Sliding Window
+Difficulty: Medium
+Interview Use: Backend SWE, Node/Python roles
+
+Problem Statement
+
+You are building a mini API gateway.
+Implement a Rate Limiter that processes requests for multiple users.
+
+A user can make at most N requests per M seconds.
+If the user exceeds the limit, the API must return:
+
+429 Too Many Requests
+
+
+Your task:
+
+Write a class RateLimiter with:
+
+Methods
+
+constructor(limit, window)
+
+limit = max number of requests
+
+window = time window in seconds
+
+allowRequest(userId)
+
+returns:
+
+true ⇒ request allowed
+
+false ⇒ request rejected
+
+Rules
+
+Each user has their own independent rate limit
+
+Use timestamps (in seconds or ms)
+
+Efficient for thousands of users
+
+Sliding window method required (not fixed window)
+
+Example
+limit = 3, window = 10 sec
+
+User A calls allowRequest:
+1. t=1  → allowed
+2. t=2  → allowed
+3. t=3  → allowed
+4. t=4  → rejected (exceeds 3 in last 10 sec)
+
+At t=12 → allowed (old requests expired)
