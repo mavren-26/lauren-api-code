@@ -1,0 +1,17 @@
+✅ Problem 1: Rate Limiter for API Requests (Medium)
+
+Description:
+You are building an API server. Each user can make at most N requests in T seconds.
+Implement a function canMakeRequest(userId) that returns true if the user can make a request or false if they have exceeded the limit.
+
+Use an in-memory store to track request timestamps.
+
+Example
+
+N = 3 requests per 10 seconds
+
+// User 1 calls canMakeRequest 3 times quickly
+canMakeRequest(1) -> true
+canMakeRequest(1) -> true
+canMakeRequest(1) -> true
+canMakeRequest(1) -> false // 4th call within 10s exceeds limit

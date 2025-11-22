@@ -1,0 +1,14 @@
+✅ Problem 2: API Key Permission Checker (Medium)
+
+Description:
+You have multiple APIs and each API key has a list of allowed endpoints.
+Implement a function canAccess(apiKey, endpoint) that returns true if the API key is allowed to access the endpoint, else false.
+
+Example
+const apiKeys = {
+  "key1": ["/users", "/posts"],
+  "key2": ["/posts"]
+};
+
+canAccess("key1", "/users") // true
+canAccess("key2", "/users") // false
