@@ -1,0 +1,39 @@
+✅ Problem 2: User Analytics API – Count Active Users
+Problem Statement:
+
+Your system logs user activity events like:
+
+{
+  "userId": "123",
+  "action": "page_view",
+  "timestamp": 1715000000
+}
+
+
+Create two endpoints:
+
+1) POST /log
+
+Stores a user action.
+
+Request:
+
+{
+  "userId": "123",
+  "action": "page_view"
+}
+
+
+Response:
+
+{ "message": "logged" }
+
+2) GET /active-users?minutes=5
+
+Return how many unique users have activity in the last X minutes.
+
+Example Response:
+
+{
+  "activeUsers": 14
+}   

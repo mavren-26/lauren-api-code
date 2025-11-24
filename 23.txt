@@ -1,0 +1,28 @@
+✅ Problem 1: Rate-Limited Weather API Proxy
+Problem Statement:
+
+You are building a backend service that acts as a proxy to an external Weather API.
+But the external API only allows 10 requests per minute per user.
+
+Build an API endpoint:
+
+GET /weather?city=Delhi&userId=123
+
+
+Requirements:
+
+Each userId can make only 10 requests per rolling 60 seconds.
+
+If the user exceeds the limit, return:
+
+{
+  "error": "Rate limit exceeded. Try again later."
+}
+
+
+If allowed, return:
+
+{
+  "city": "Delhi",
+  "temperature": 25
+}
