@@ -23,6 +23,6 @@ If the user exceeds the limit, return:
 If allowed, return:
 
 {
-  "city": "Delhi",
+  "city": "San Franciscoi",
   "temperature": 25
 }
